@@ -1,0 +1,153 @@
+body {
+  display: grid;
+  grid-template: 0.1fr 1fr/1fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #fff7ed;
+}
+
+header {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main > .gameboard {
+  width: 35vw;
+  height: 80%;
+  margin: 1em;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+  padding: 2em;
+}
+
+main > .gamecontrols {
+  width: 60vw;
+  height: 20%;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.topleft,
+.middleleft,
+.topcenter,
+.middlecenter {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.bottomleft,
+.bottomcenter {
+  border-right: 5px solid black;
+}
+.topright,
+.middleright {
+  border-bottom: 5px solid black;
+}
+
+.topleft,
+.middleleft,
+.topcenter,
+.middlecenter,
+.bottomleft,
+.bottomcenter,
+.topright,
+.middleright,
+.bottomright {
+  font-family: "Poiret One", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+.pvsp {
+  width: 40%;
+  height: 65%;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  background: #fff7ed;
+}
+
+.pvsp:hover {
+  width: 45%;
+  height: 70%;
+  box-shadow: 0.1em 0.2em 0.1em gray;
+}
+
+.disappear {
+  visibility: hidden;
+}
+
+main > .forms {
+  position: fixed;
+  background: none;
+  width: 50vw;
+  height: 40vh;
+  transform: translateY(-15%);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+main > .winner {
+  align-items: center;
+  justify-content: center;
+}
+
+main > .winner > div > button {
+  width: 9vw;
+  height: 8vh;
+  font-weight: bolder;
+  background: none;
+  border-radius: 1em;
+  text-align: center;
+}
+.anouncer {
+  font-family: "Satisfy", cursive;
+  color: gray;
+  transform: rotate(-5deg) scale(1.1);
+}
+.playerwarn {
+  color: red;
+  font-size: 0.7em;
+  font-family: "Satisfy", cursive;
+}
+
+.forms > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms > div > input {
+  border-radius: 1em;
+  height: 5vh;
+}
+
+.formbtn {
+  background: white;
+  border-radius: 1em;
+  width: 70%;
+  transform: translateX(20%);
+  font-weight: bolder;
+  height: 5vh;
+}
